@@ -1,5 +1,33 @@
 Git Notes
 
 ls - list all files in current directory
+
 $ git config --global user.name "Carrie"
 $ git config --global user.email "cdelsig@gmail.com"
+--need these two for commits
+
+$git init <projectFolder>
+--makes folder a git repository
+
+$git status
+--tells you:
+    which branch you're on
+    which files have changed
+    which files are not tracked
+    hints on what to do next
+
+$git add <fileName>
+--adds file to repository
+$git add .
+--adds all files in directory to repository
+--IMPORTANT: need to add files each time after each commit
+
+$git rm --cached <fileName>
+--removes file from staging area (that's what the "cached" is for)
+    file won't be tracked anymore
+
+$git commit -m "your message"
+-- -m is for message
+
+$git log
+--shows changes to repository
