@@ -1,0 +1,5 @@
+Git Notes
+
+ls - list all files in current directory
+$ git config --global user.name "Carrie"
+$ git config --global user.email "cdelsig@gmail.com"
