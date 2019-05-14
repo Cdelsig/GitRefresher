@@ -89,5 +89,7 @@ $ git merge <branch to merge>
 --need to be in the branch that is to be merged to the target branch
   ex: if in (branch1): $ git merge master
 
-$ git pull
+$ git pull <name> <branchname>
+--ex: $ git pull origin master
 --similar to MERGE, but syncs local repository with remote repository
+--always do PULL before PUSH to avoid conflicts
