@@ -44,3 +44,31 @@ $git diff
 --shows which files have changed or added/removed
 $git diff --cached
 --shows which files have changed or added/removed to staging area
+
+
+~~ In GitHub > Settings > SSH Keys:
+  need to set this up manually when using Git Bash
+  RSA key is public and private key.
+  Private key is on local machine
+  Public key gets added to GitHub
+
+  To upload code to GitHub:
+  1. Create SSH Key
+    Start > <user> , check to see that .SSH folder doesn't exist
+    In GitBash, type:
+      $ssh-keygen -t rsa -C "email address"
+      -- -t is for the type of key
+      -- -C allows us to add a comment, so we are adding in our email address
+      -- then, enter a password for the key
+  2. Send using HTTPS or SSH (GitHub prefers SSH)
+
+  $ ssh -T github.com to test key
+
+  $git remote add
+  --tells git to add remote repository to GitHub
+  --common to use origin as name of repo, then, go into GitHub and copy SSH key
+  will end up looking like this:
+  $ git remote add origin git@github.com:Cdelsig/GitRefresher.git
+
+  $ git push origin master
+  -- origin is the name of the local repository, and master is the master branch we are pushing
