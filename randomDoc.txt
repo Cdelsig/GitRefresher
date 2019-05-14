@@ -4,3 +4,4 @@ here is my random document for:
 -forking
 
 here is some text in the master branch
+and now we merge...
