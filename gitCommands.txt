@@ -15,6 +15,8 @@ $git status
     which files have changed
     which files are not tracked
     hints on what to do next
+$git status -s
+-- -s is for "shorthand". SHows which files were changed, but not the changes themselves.
 
 $git add <fileName>
 --adds file to repository
@@ -28,6 +30,17 @@ $git rm --cached <fileName>
 
 $git commit -m "your message"
 -- -m is for message
+$git commit -a -m "your message"
+--commits all changes
 
 $git log
 --shows changes to repository
+    when log gets too long it puts you into a cmd line editor
+    to exit: hold Shift + zz
+$git log --oneline
+    shows messages only, not user and date
+
+$git diff
+--shows which files have changed or added/removed
+$git diff --cached
+--shows which files have changed or added/removed to staging area
