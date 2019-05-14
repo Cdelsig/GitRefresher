@@ -3,9 +3,9 @@ here is my random document for:
 -merging
 -forking
 
-<<<<<<< HEAD
+
 here is some text in my branch1 branch!!
-=======
+
 here is some text in the master branch
 and now we merge...
->>>>>>> master
+SUCCESS!
