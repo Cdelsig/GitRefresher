@@ -72,3 +72,15 @@ $git diff --cached
 
   $ git push origin master
   -- origin is the name of the local repository, and master is the master branch we are pushing
+~~
+
+$ git branch
+--lists all branches
+$ git branch <name of new branch>
+--creates new branch
+$ git checkout <name of branch>
+--switch to branch
+
+$ git clone <ssh link>
+--gets clone from GitHub down to local machine
+  need to set up SSH key if one doesn't already exist
