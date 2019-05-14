@@ -78,8 +78,10 @@ $ git branch
 --lists all branches
 $ git branch <name of new branch>
 --creates new branch
+
 $ git checkout <name of branch>
 --switch to branch
+--will also allow you to revert to previous commit or go to specific tag
 
 $ git clone <ssh link>
 --gets clone from GitHub down to local machine
@@ -93,3 +95,29 @@ $ git pull <name> <branchname>
 --ex: $ git pull origin master
 --similar to MERGE, but syncs local repository with remote repository
 --always do PULL before PUSH to avoid conflicts
+-- can do git pull --rebase as a helper
+
+$ git rebase --continue
+--how to handle merge conflicts from cmd line (not GitBash) when using GUI
+--need git add . first
+--grabs commits in order
+
+$ git fetch
+--not sure how this is different from git pull?
+
+$ git tag -a <annotation> -m <message>
+--milestones, eg. releases, etc
+--need to push explicitly
+--ex: $ git push origin <tagname>
+--or $ git push <name> --tag for all tags
+
+$ git reset --hard
+--will reset the index and working tree (commit log).
+--Any changes before the reset commit is discarded/history is "rewritten"
+--ONLY use if the project is not shared
+--permanent delete
+
+$ git revert <commit hash>
+--doesn't delete history. Creates new commit that removes changes from previous commit
+--best practice to revert in sequential order
+--use git log to get the hash code to the commit you want to revert to
